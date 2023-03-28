@@ -1,0 +1,297 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!--=============== FAVICON ===============-->
+    <link rel="shortcut icon" href="{{ url_for('static', filename='/img/logo_fish.png') }}" type="image/x-icon">
+
+    <!--=============== BOXICONS ===============-->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/boxicons@latest/css/boxicons.min.css">
+
+    <!--=============== SWIPER CSS ===============-->
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/swiper-bundle.min.css') }}">
+
+    <!--=============== CSS ===============-->
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/style.css') }}">
+
+    <title>FWISH</title>
+</head>
+
+<body>
+
+    <!-- -------------------NavBar----------------------- -->
+    <header class="header" id="header">
+        <nav class="nav container">
+            <a href="#" class="nav__logo">
+                <img src="{{ url_for('static', filename='/img/logo_fish.png') }}" class="nav__logo-icon">
+            </a>
+
+            <div class="nav__menu" id="nav-menu">
+                <ul class="nav__list">
+                    <li class="nav__item">
+                        <a href="#home" class="nav__link active-link"> Know your fish</a>
+                    </li>
+                    <li class="nav__item">
+                        <a href="/dashboard" class="nav__link">Dashboard</a>
+                    </li>
+                    <li class="nav__item">
+                        <a href="/blog" class="nav__link">Blog</a>
+                    </li>
+                    
+                    <li class="nav__item">
+                        <a href="#contact" class="nav__link">About Us</a>
+                    </li>
+                </ul>
+
+                <div class="nav__close" id="nav-close">
+                    <i class='bx bx-x'></i>
+                </div>
+            </div>
+
+            <div class="nav__btns">
+                <a href="/login" class=" button button--small">Login/Signup</a>
+                <div class="nav__toggle" id="nav-toggle">
+                    <i class='bx bx-menu'></i>
+                </div>
+            </div>
+        </nav>
+    </header>
+
+    <!-- ---------------------Main----------------------- -->
+    <main class="main">
+        <!-- ---Home--- -->
+        <section class="home" id="home" >
+            <div class="home__container container grid">
+                <div class="home__img-bg">
+                    <img src="{{ url_for('static', filename='/img/logo_fish.png') }}" alt="" class="home__img">
+                </div>
+
+                <div class="home__data">
+                    <h1 class="home__title">WE CARE FOR YOUR FISH</h1>
+                    <p class="home__description">
+                       Lorem ipsum dolor sit amet consectetur adipisicing elit. Tempore nemo dolorum at vitae, amet similique iste inventore.
+                    </p>
+                    <!-- <span class="home__price">$1245</span> -->
+
+                    <div class="home__btns">
+                        <a href="" class="button button--small">
+                            Know your Fish
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- ---About--- -->
+        <section class="about section container" id="about" >
+            <div class="about__container grid">
+
+                <div class="about__images">
+                    <img src="{{ url_for('static', filename='/img/logo design.png') }}" alt="" class="about__img">
+                    <!-- <div class="about__square"></div> -->
+                </div>
+
+                <div class="about__data">
+                    <h2 class="section__title about__section-title">
+                        About Us
+                    </h2>
+
+                    <p class="about__description">
+                       Lorem ipsum dolor sit amet consectetur, adipisicing elit. Culpa totam illo tenetur dolor sunt. Dolore enim non corporis placeat aspernatur error dolorum maiores, rerum accusamus delectus voluptates cupiditate eos. Placeat, neque dolorum.
+                    </p>
+
+                    <a href="#contact" class="button button--small">Contact Us</a>
+                </div>
+            </div>
+        </section>
+
+        <!-- ---Projects--- -->
+        <section class="projects section container" id="projects" >
+            <h2 class="section__title">
+                Services we provide
+            </h2>
+
+            <div class="projects__container grid">
+                <article class="projects__card">
+
+                    <div class="projects__data">
+                        <h3 class="projects__title">Fish Tracking</h3>
+                    </div>
+
+                    <a href ="/dashboard" class="button projects__button">Go to Dashboard</a>
+                </article>
+
+                <article class="projects__card">
+
+
+                    <div class="projects__data">
+                        <h3 class="projects__title">Water Quality Check</h3>
+                    </div>
+
+                    <a href ="/dashboard" class="button projects__button">Go to Dashboard</a>
+                </article>
+
+                <article class="projects__card">
+
+                    <div class="projects__data">
+                        <h3 class="projects__title">Fishery Blogs</h3>
+                    </div>
+
+                    <a href ="/blog" class="button projects__button">Go to Blog</a>
+                </article>
+            </div>
+        </section>
+
+        <!-- ---Roles---- -->
+        <section id="roles" >
+            <h2 class="section__title roles">
+               Team
+            </h2>
+            <div class="cont1">
+                <div class="card">
+                    <div class="content">
+                        <div class="img"><img src="{{ url_for('static', filename='/img/my_image.jpg') }}" class="image"></div>
+                        <h3>Manasvi Shetty</h3>
+                        <h4>Team member</h4>
+
+                    </div>
+                </div>
+
+                <div class="card">
+                    <div class="content">
+                        <div class="img"><img src="{{ url_for('static', filename='/img/krupali.jpg') }}" class="image"></div>
+                        <h3>Krupali Thakur</h3>
+                        <h4>Team member</h4>
+
+                    </div>
+                </div>
+
+                <div class="card">
+                    <div class="content">
+                        <div class="img"><img src="{{ url_for('static', filename='/img/pruthvi.jpg') }}" class="image"></div>
+                        <h3>Pruthviraj Patil</h3>
+                        <h4>Team member</h4>
+
+                    </div>
+                </div>
+
+                <div class="card">
+                    <div class="content">
+                        <div class="img"><img src="{{ url_for('static', filename='/img/srishti.jpg') }}" class="image"></div>
+                        <h3>Srishti Singh</h3>
+                        <h4>Team member</h4>
+
+                    </div>
+                </div>
+
+
+
+            </div>
+        </section>
+
+
+    </main>
+
+    <!-- ----------------------Footer ---------------------------->
+    <footer class="footer section" id="contact" class="hidden">
+        <div class="footer__container container grid">
+            <div class="footer__content">
+                <h3 class="footer__title">FWISH</h3>
+
+                <ul class="footer__list">
+                    <li>Nuture</li>
+                    <li>Protect</li>
+                    <li>Grow.</li>
+                </ul>
+            </div>
+            <div class="footer__content">
+                <h3 class="footer__title">Navigation</h3>
+
+                <ul class="footer__links">
+                    <li>
+                        <a href="#home" class="footer__link">Know Your Fish</a>
+                    </li>
+                    <li>
+                        <a href="//dashboard" class="footer__link"> Dashboard</a>
+                    </li>
+                    <li>
+                        <a href="/blog" class="footer__link">Blog</a>
+                    </li>
+                    <li>
+                        <a href="#roles" class="footer__link">About Us</a>
+                    </li>
+                </ul>
+            </div>
+
+            <div class="footer__content">
+                <h3 class="footer__title">Get in Touch</h3>
+
+                <ul class="footer__links">
+                    <li>
+                        <a href="mailto:manasvi.shetty@somaiya.edu" class="footer__link">manasvi.shetty@somaiya.edu</a>
+                    </li>
+                    <li>
+                        <a href=" https://wa.me/918104797851" class="footer__link">+91 81xxxxxx51</a>
+                    </li>
+                </ul>
+            </div>
+
+            <div class="footer__content">
+                <h3 class="footer__title">Social</h3>
+
+                <ul class="footer__social">
+                    <a href="https://www.linkedin.com/in/manasvi-shetty/" target="_blank" class="footer__social-link">
+                        <i class='bx bxl-linkedin'></i>
+                    </a>
+
+                    <a href="https://twitter.com/ManasviShetty7" target="_blank" class="footer__social-link">
+                        <i class='bx bxl-twitter'></i>
+                    </a>
+
+                    <a href="https://www.github.com/Manasvi-Shetty" target="_blank" class="footer__social-link">
+                        <i class='bx bxl-github'></i>
+                    </a>
+
+                    <a href="https://www.behance.net/manasvishetty42" target="_blank" class="footer__social-link">
+                        <i class='bx bxl-behance'></i>
+                    </a>
+                </ul>
+            </div>
+        </div>
+
+        <span class="footer__copy">&#169; Made by Manasvi Shetty</span>
+        <div id="google_translate_element"></div>
+    </footer>
+
+    
+
+    <!-- ------------------------Scroll animation-------------------- -->
+    <a href="#" class="scrollup" id="scroll-up">
+        <i class='bx bx-up-arrow-alt scrollup__icon'></i>
+    </a>
+
+   
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.8.3/jquery.min.js"></script>
+    <script src="http://code.jquery.com/ui/1.9.2/jquery-ui.js"></script>
+    <script type="text/javascript" src="script.js"></script>
+
+    <script type="text/javascript">
+        function googleTranslateElementInit() {
+            new google.translate.TranslateElement({
+                pageLanguage: 'en',
+                layout: google.translate.TranslateElement.InlineLayout.HORIZONTAL
+            }, 'google_translate_element');
+        }
+    </script>
+
+    <script type="text/javascript"
+            src="//translate.google.com/translate_a/element.js?cb=googleTranslateElementInit"></script>
+    <!-- -------------------------Main JS------------------------------------ -->
+    <script src="{{ url_for('static', filename='/js/main.js') }}"></script>
+
+</body>
+
+</html>

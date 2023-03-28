@@ -1,0 +1,282 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Blog</title>
+
+   <!--=============== FAVICON ===============-->
+   <link rel="shortcut icon" href="{{ url_for('static', filename='img/logo_fish.png') }}" type="image/x-icon">
+
+   <!--=============== BOXICONS ===============-->
+   <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/boxicons@latest/css/boxicons.min.css">
+
+   <!--=============== SWIPER CSS ===============-->
+   <link rel="stylesheet" href="{{ url_for('static', filename='css/swiper-bundle.min.css') }}">
+
+   <!--=============== CSS ===============-->
+   <link rel="stylesheet" href="{{ url_for('static', filename='css/style.css') }}">
+</head>
+<body>
+
+    <!-- -------------------NavBar----------------------- -->
+    <header class="header" id="header">
+        <nav class="nav container">
+            <a href="#" class="nav__logo">
+                <img src="{{ url_for('static', filename='img/logo_fish.png') }}" class="nav__logo-icon">
+            </a>
+
+            <div class="nav__menu" id="nav-menu">
+                <ul class="nav__list">
+                    <li class="nav__item">
+                        <a href="#home" class="nav__link active-link"> Know your fish</a>
+                    </li>
+                    <li class="nav__item">
+                        <a href="/dashboard" class="nav__link">Dashboard</a>
+                    </li>
+                    <li class="nav__item">
+                        <a href="/blog" class="nav__link">Blog</a>
+                    </li>
+                    
+                    <li class="nav__item">
+                        <a href="#contact" class="nav__link">About Us</a>
+                    </li>
+                </ul>
+
+                <div class="nav__close" id="nav-close">
+                    <i class='bx bx-x'></i>
+                </div>
+            </div>
+
+            <div class="nav__btns">
+                <a href="/login" class=" button button--small">Login/Signup</a>
+                <div class="nav__toggle" id="nav-toggle">
+                    <i class='bx bx-menu'></i>
+                </div>
+            </div>
+        </nav>
+    </header>
+
+
+    <!-- ---Blogs---- -->
+    <section id="roles" >
+        <div class="blog__heading">
+            <span>Fisheries</span>
+            <h2>Our Blog</h2>
+        </div>
+        
+       <div class="blog__container">
+        <div class="blog__box">
+            <div class="blog__img">
+                <img src="{{ url_for('static', filename='img/logo_fish.png') }}" alt="Blog">
+            </div>
+            <div class="blog__text">
+                <span>18th March 2023/Fisheries</span>
+                <a href="#" class="blog__title">How to get your fish active?</a>
+                <p>Successful fish health management begins with prevention of disease rather than treatment. Prevention of fish disease is accomplished through good water quality management, nutrition and sanitation. Without this foundation it is impossible to prevent outbreaks of opportunistic diseases. The fish is constantly bathed in potential pathogens, including bacteria, fungi, and parasites. Even use of sterilisation technology (ie, ultraviolet sterilisers, ozonation) does not eliminate all potential pathogens from the environment. Sub-optimal water quality, poor nutrition or immune system suppression generally associated with stressful conditions allow these potential pathogens to cause disease.</p>
+                <a href="#">Read More</a>
+            </div>
+           
+        </div>
+
+        <div class="blog__box">
+            <div class="blog__img">
+                <img src="{{ url_for('static', filename='img/fish.jpg') }}" alt="Blog">
+            </div>
+            <div class="blog__text">
+                <span>18th March 2023/Fisheries</span>
+                <a href="#" class="blog__title">How to get your fish active?</a>
+                <p>Successful fish health management begins with prevention of disease rather than treatment. Prevention of fish disease is accomplished through good water quality management, nutrition and sanitation. Without this foundation it is impossible to prevent outbreaks of opportunistic diseases. The fish is constantly bathed in potential pathogens, including bacteria, fungi, and parasites. Even use of sterilisation technology (ie, ultraviolet sterilisers, ozonation) does not eliminate all potential pathogens from the environment. Sub-optimal water quality, poor nutrition or immune system suppression generally associated with stressful conditions allow these potential pathogens to cause disease.</p>
+                <a href="#">Read More</a>
+            </div>
+           
+        </div>
+
+        <div class="blog__box">
+            <div class="blog__img">
+                <img src="{{ url_for('static', filename='img/fish.jpg') }}" alt="Blog">
+            </div>
+            <div class="blog__text">
+                <span>18th March 2023/Fisheries</span>
+                <a href="#" class="blog__title">How to get your fish active?</a>
+                <p>Successful fish health management begins with prevention of disease rather than treatment. Prevention of fish disease is accomplished through good water quality management, nutrition and sanitation. Without this foundation it is impossible to prevent outbreaks of opportunistic diseases. The fish is constantly bathed in potential pathogens, including bacteria, fungi, and parasites. Even use of sterilisation technology (ie, ultraviolet sterilisers, ozonation) does not eliminate all potential pathogens from the environment. Sub-optimal water quality, poor nutrition or immune system suppression generally associated with stressful conditions allow these potential pathogens to cause disease.</p>
+                <a href="#">Read More</a>
+            </div>
+           
+        </div>
+
+        <div class="blog__box">
+            <div class="blog__img">
+                <img src="{{ url_for('static', filename='img/fish.jpg') }}" alt="Blog">
+            </div>
+            <div class="blog__text">
+                <span>18th March 2023/Fisheries</span>
+                <a href="#" class="blog__title">How to get your fish active?</a>
+                <p>Successful fish health management begins with prevention of disease rather than treatment. Prevention of fish disease is accomplished through good water quality management, nutrition and sanitation. Without this foundation it is impossible to prevent outbreaks of opportunistic diseases. The fish is constantly bathed in potential pathogens, including bacteria, fungi, and parasites. Even use of sterilisation technology (ie, ultraviolet sterilisers, ozonation) does not eliminate all potential pathogens from the environment. Sub-optimal water quality, poor nutrition or immune system suppression generally associated with stressful conditions allow these potential pathogens to cause disease.</p>
+                <a href="#">Read More</a>
+            </div>
+           
+        </div>
+        
+        <div class="blog__box">
+            <div class="blog__img">
+                <img src="{{ url_for('static', filename='img/fish.jpg') }}" alt="Blog">
+            </div>
+            <div class="blog__text">
+                <span>18th March 2023/Fisheries</span>
+                <a href="#" class="blog__title">How to get your fish active?</a>
+                <p>Successful fish health management begins with prevention of disease rather than treatment. Prevention of fish disease is accomplished through good water quality management, nutrition and sanitation. Without this foundation it is impossible to prevent outbreaks of opportunistic diseases. The fish is constantly bathed in potential pathogens, including bacteria, fungi, and parasites. Even use of sterilisation technology (ie, ultraviolet sterilisers, ozonation) does not eliminate all potential pathogens from the environment. Sub-optimal water quality, poor nutrition or immune system suppression generally associated with stressful conditions allow these potential pathogens to cause disease.</p>
+                <a href="#">Read More</a>
+            </div>
+           
+        </div>
+
+        <div class="blog__box">
+            <div class="blog__img">
+                <img src="{{ url_for('static', filename='img/fish.jpg') }}" alt="Blog">
+            </div>
+            <div class="blog__text">
+                <span>18th March 2023/Fisheries</span>
+                <a href="#" class="blog__title">How to get your fish active?</a>
+                <p>Successful fish health management begins with prevention of disease rather than treatment. Prevention of fish disease is accomplished through good water quality management, nutrition and sanitation. Without this foundation it is impossible to prevent outbreaks of opportunistic diseases. The fish is constantly bathed in potential pathogens, including bacteria, fungi, and parasites. Even use of sterilisation technology (ie, ultraviolet sterilisers, ozonation) does not eliminate all potential pathogens from the environment. Sub-optimal water quality, poor nutrition or immune system suppression generally associated with stressful conditions allow these potential pathogens to cause disease.</p>
+                <a href="#">Read More</a>
+            </div>
+           
+        </div>
+
+        <div class="blog__box">
+            <div class="blog__img">
+                <img src="{{ url_for('static', filename='img/fish.jpg') }}" alt="Blog">
+            </div>
+            <div class="blog__text">
+                <span>18th March 2023/Fisheries</span>
+                <a href="#" class="blog__title">How to get your fish active?</a>
+                <p>Successful fish health management begins with prevention of disease rather than treatment. Prevention of fish disease is accomplished through good water quality management, nutrition and sanitation. Without this foundation it is impossible to prevent outbreaks of opportunistic diseases. The fish is constantly bathed in potential pathogens, including bacteria, fungi, and parasites. Even use of sterilisation technology (ie, ultraviolet sterilisers, ozonation) does not eliminate all potential pathogens from the environment. Sub-optimal water quality, poor nutrition or immune system suppression generally associated with stressful conditions allow these potential pathogens to cause disease.</p>
+                <a href="#">Read More</a>
+            </div>
+           
+        </div>
+
+        <div class="blog__box">
+            <div class="blog__img">
+                <img src="{{ url_for('static', filename='img/fish.jpg') }}" alt="Blog">
+            </div>
+            <div class="blog__text">
+                <span>18th March 2023/Fisheries</span>
+                <a href="#" class="blog__title">How to get your fish active?</a>
+                <p>Successful fish health management begins with prevention of disease rather than treatment. Prevention of fish disease is accomplished through good water quality management, nutrition and sanitation. Without this foundation it is impossible to prevent outbreaks of opportunistic diseases. The fish is constantly bathed in potential pathogens, including bacteria, fungi, and parasites. Even use of sterilisation technology (ie, ultraviolet sterilisers, ozonation) does not eliminate all potential pathogens from the environment. Sub-optimal water quality, poor nutrition or immune system suppression generally associated with stressful conditions allow these potential pathogens to cause disease.</p>
+                <a href="#">Read More</a>
+            </div>
+           
+        </div>
+
+        <div class="blog__box">
+            <div class="blog__img">
+                <img src="{{ url_for('static', filename='img/fish.jpg') }}" alt="Blog">
+            </div>
+            <div class="blog__text">
+                <span>18th March 2023/Fisheries</span>
+                <a href="#" class="blog__title">How to get your fish active?</a>
+                <p>Successful fish health management begins with prevention of disease rather than treatment. Prevention of fish disease is accomplished through good water quality management, nutrition and sanitation. Without this foundation it is impossible to prevent outbreaks of opportunistic diseases. The fish is constantly bathed in potential pathogens, including bacteria, fungi, and parasites. Even use of sterilisation technology (ie, ultraviolet sterilisers, ozonation) does not eliminate all potential pathogens from the environment. Sub-optimal water quality, poor nutrition or immune system suppression generally associated with stressful conditions allow these potential pathogens to cause disease.</p>
+                <a href="#">Read More</a>
+            </div>
+           
+        </div>
+       </div>
+    </section>
+
+
+    <!-- ----------------------Footer ---------------------------->
+    <footer class="footer section" id="contact" class="hidden">
+        <div class="footer__container container grid">
+            <div class="footer__content">
+                <h3 class="footer__title">FWISH</h3>
+
+                <ul class="footer__list">
+                    <li>Nuture</li>
+                    <li>Protect</li>
+                    <li>Grow.</li>
+                </ul>
+            </div>
+            <div class="footer__content">
+                <h3 class="footer__title">Navigation</h3>
+
+                <ul class="footer__links">
+                    <li>
+                        <a href="#home" class="footer__link">Know Your Fish</a>
+                    </li>
+                    <li>
+                        <a href="/dashboard" class="footer__link"> Dashboard</a>
+                    </li>
+                    <li>
+                        <a href="/blog" class="footer__link">Blog</a>
+                    </li>
+                    <li>
+                        <a href="#roles" class="footer__link">About Us</a>
+                    </li>
+                </ul>
+            </div>
+
+            <div class="footer__content">
+                <h3 class="footer__title">Get in Touch</h3>
+
+                <ul class="footer__links">
+                    <li>
+                        <a href="mailto:manasvi.shetty@somaiya.edu" class="footer__link">manasvi.shetty@somaiya.edu</a>
+                    </li>
+                    <li>
+                        <a href=" https://wa.me/918104797851" class="footer__link">+91 81xxxxxx51</a>
+                    </li>
+                </ul>
+            </div>
+
+            <div class="footer__content">
+                <h3 class="footer__title">Social</h3>
+
+                <ul class="footer__social">
+                    <a href="https://www.linkedin.com/in/manasvi-shetty/" target="_blank" class="footer__social-link">
+                        <i class='bx bxl-linkedin'></i>
+                    </a>
+
+                    <a href="https://twitter.com/ManasviShetty7" target="_blank" class="footer__social-link">
+                        <i class='bx bxl-twitter'></i>
+                    </a>
+
+                    <a href="https://www.github.com/Manasvi-Shetty" target="_blank" class="footer__social-link">
+                        <i class='bx bxl-github'></i>
+                    </a>
+
+                    <a href="https://www.behance.net/manasvishetty42" target="_blank" class="footer__social-link">
+                        <i class='bx bxl-behance'></i>
+                    </a>
+                </ul>
+            </div>
+        </div>
+
+        <span class="footer__copy">&#169; Made by Manasvi Shetty</span>
+        <div id="google_translate_element"></div>
+    </footer>
+
+
+
+      <!-- -------------------------Main JS------------------------------------ -->
+      <script src="{{ url_for('static', filename='js/main.js') }}"></script>
+
+      <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.8.3/jquery.min.js"></script>
+      <script src="http://code.jquery.com/ui/1.9.2/jquery-ui.js"></script>
+      <script type="text/javascript" src="script.js"></script>
+  
+      <script type="text/javascript">
+          function googleTranslateElementInit() {
+              new google.translate.TranslateElement({
+                  pageLanguage: 'en',
+                  layout: google.translate.TranslateElement.InlineLayout.HORIZONTAL
+              }, 'google_translate_element');
+          }
+      </script>
+  
+      <script type="text/javascript"
+              src="//translate.google.com/translate_a/element.js?cb=googleTranslateElementInit"></script>
+</body>
+</html>
